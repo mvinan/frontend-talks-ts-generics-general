@@ -25,10 +25,11 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-        /* If NOT transpiling with TypeScript: */
+    /* If NOT transpiling with TypeScript: */
     "moduleResolution": "Bundler",
     "module": "ESNext",
     "noEmit": true,
+    "declaration": true
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
