@@ -298,8 +298,8 @@ const getLocaleByPathSplit = (messages: Record<string, unknown>, path: Array<str
 }
 
 
-export function t(key: PathIntoLocale): string {
+export function wording(key: PathIntoLocale): string {
   return getLocaleByPathSplit(locales[currentLocale], key.split('.'))
 }
 
-console.log(t('greetings.saludito'))
+console.log(wording('greetings.saludito'))
